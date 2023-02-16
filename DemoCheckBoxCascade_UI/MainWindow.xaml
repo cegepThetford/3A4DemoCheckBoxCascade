@@ -1,0 +1,17 @@
+﻿<Window x:Class="DemoCheckBoxCascade_UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoCheckBoxCascade_UI"
+        mc:Ignorable="d"
+        Title="DemoCheckboxCascade" SizeToContent="WidthAndHeight">
+    <StackPanel Button.Click="validerCaseCocher">
+        <CheckBox Name="chkToutesOptions" IsChecked="{x:Null}">Toutes les options</CheckBox>
+        <StackPanel Margin="10 0 0 0">
+            <CheckBox Name="chkIEM" IsChecked="True">Impulsion électromagnétique (IEM)</CheckBox>
+            <CheckBox Name="chkCES">Champ électrostatique (CES)</CheckBox>
+            <CheckBox Name="chkBOR">Brouilleur d'ondes radio (BOR)</CheckBox>
+        </StackPanel>
+    </StackPanel>
+</Window>
